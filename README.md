@@ -65,13 +65,6 @@ The React app will run at `http://localhost:5173`
 
 ---
 
-## 🎨 UI Preview
-| **Pokémon Selection** | **Catch Probability Chart** |
-|----------------|----------------|
-| ![Pokémon Dropdown](https://via.placeholder.com/300) | ![Catch Chart](https://via.placeholder.com/300) |
-
----
-
 ## 🚀 Future Enhancements
 🔹 **Dark Mode Toggle 🌙**  
 🔹 **Poké Ball Throw Animation 🎥**  
