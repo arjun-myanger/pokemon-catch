@@ -1,0 +1,163 @@
+/* ✨ Minimalist Reset */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* 🌟 Main Form Container */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+}
+
+/* 🏆 Title */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* 🏗️ Input Group Styling */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* 📚 Dropdowns & Inputs */
+select, input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+select:hover, input:hover {
+  border-color: #bbb;
+}
+
+select:focus, input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* 🎧 Slider Styling */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;  /* ✅ Standard property for compatibility */
+  width: 80%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+input[type="range"]:hover {
+  background: #ccc;
+}
+
+/* 🔘 Custom Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* 🔐 Button Styling */
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* 📊 Chart Container */
+.chart-container {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f8f8f8;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pokemon-image img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
