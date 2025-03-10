@@ -51,6 +51,13 @@ export default function PokemonCatchCalculator() {
 
   // ✅ Wrap fetch function in `useCallback` to prevent infinite loops
   const fetchCatchProbability = useCallback(async () => {
+    // ✅ If Master Ball is selected, instantly set catch probability to 100%
+    if (ballMultiplier === 3.5) {
+      // Master Ball has a 100% success rate
+      setCatchProbability(100);
+      return;
+    }
+
     const response = await fetch("http://127.0.0.1:8000/calculate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -114,6 +121,7 @@ export default function PokemonCatchCalculator() {
       </div>
 
       {/* Ball Type */}
+      {/* Ball Type */}
       <div className="input-group">
         <label>Ball Type:</label>
         <select
@@ -123,6 +131,7 @@ export default function PokemonCatchCalculator() {
           <option value={1.0}>Poké Ball (1.0x)</option>
           <option value={1.5}>Great Ball (1.5x)</option>
           <option value={2.0}>Ultra Ball (2.0x)</option>
+          <option value={3.5}>Master Ball (Always Catches)</option>
         </select>
       </div>
 
